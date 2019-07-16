@@ -54,3 +54,9 @@ h1 {
   height: 16em;
   width: 13em;
 }
+
+@media screen and (max-width: 600px) {
+  h1{
+    text-align: center;
+  }
+}
