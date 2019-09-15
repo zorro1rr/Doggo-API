@@ -8,11 +8,11 @@ body{
   background-image: url("../images/doge-back.jpg");
   font-family: 'Luckiest Guy', cursive;
   height: 100vh;
-  /* background-repeat: no-repeat; */
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
 }
 
 h1 {
@@ -41,22 +41,22 @@ h1 {
   height: auto;
 }
 
-/* Style the button and place it in the middle of the container/image */
-.container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
+.btn {
+  font-family: 'Luckiest Guy', cursive;
+  color: OrangeRed;
+  font-size: 1rem;
+  background-image: url(images/doge-sized.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.0);
   border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  height: 16em;
+  width: 13em;
 }
 
-.container .btn:hover {
-  background-color: black;
+@media screen and (max-width: 600px) {
+  h1{
+    text-align: center;
+  }
 }
